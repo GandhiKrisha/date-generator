@@ -283,13 +283,15 @@ button:hover {
 @media (max-width: 768px) {
 
     body {
-        min-height: 100vh;
+        min-height: 140vh;
         height: auto;
 
         overflow-x: hidden;
         overflow-y: auto;
 
-        justify-content: flex-start;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
 
         padding-top: 40px;
         padding-bottom: 40px;
@@ -297,63 +299,115 @@ button:hover {
 
     .card {
         width: 72%;
-        max-width: 285px;
+        max-width: 300px;
 
         padding: 20px 16px;
 
-        margin-top: 180px;
-        margin-bottom: 180px;
+        margin-top: 260px;
+        margin-bottom: 220px;
+
+        border-radius: 22px;
+
+        z-index: 10;
     }
 
     h1 {
-        font-size: 1.65rem;
+        font-size: 1.9rem;
+        line-height: 1.2;
     }
 
     .subtitle {
-        font-size: 13px;
+        font-size: 14px;
+        margin-bottom: 18px;
     }
 
     #result {
-        font-size: 15px;
-        padding: 13px;
+        font-size: 16px;
+        padding: 14px;
+        margin-bottom: 20px;
     }
 
     button {
-        font-size: 14px;
-        padding: 11px 20px;
+        font-size: 15px;
+        padding: 12px 22px;
     }
 
     .quote {
-        font-size: 11px;
+        font-size: 12px;
+        line-height: 1.4;
+        margin-top: 18px;
     }
 
     .floating-photo {
-        width: 72px !important;
-        height: 72px !important;
-        opacity: 0.85;
+        width: 78px !important;
+        height: 78px !important;
+
+        opacity: 0.9;
     }
 
-    /* Top section */
+    /* TOP PHOTOS */
 
-    .photo1 { top: 2%; left: 5%; }
-    .photo2 { top: 5%; left: 38%; }
-    .photo3 { top: 3%; right: 5%; }
+    .photo1 {
+        top: 2%;
+        left: 5%;
+    }
 
-    .photo9 { top: 12%; left: 18%; }
-    .photo10 { top: 12%; right: 18%; }
+    .photo2 {
+        top: 3%;
+        left: 38%;
+    }
 
-    /* Middle section */
+    .photo3 {
+        top: 2%;
+        right: 5%;
+    }
 
-    .photo4 { top: 38%; left: 2%; }
-    .photo5 { top: 38%; right: 2%; }
+    .photo9 {
+        top: 14%;
+        left: 15%;
+    }
 
-    /* Bottom section */
+    .photo10 {
+        top: 14%;
+        right: 15%;
+    }
 
-    .photo6 { bottom: 18%; left: 5%; }
-    .photo7 { bottom: 18%; right: 5%; }
+    /* SIDE PHOTOS */
 
-    .photo8 { bottom: 6%; left: 10%; }
+    .photo4 {
+        top: 42%;
+        left: -2%;
+    }
 
-    .photo11 { bottom: 8%; left: 40%; }
-    .photo12 { bottom: 6%; right: 10%; }
+    .photo5 {
+        top: 42%;
+        right: -2%;
+    }
+
+    /* BOTTOM PHOTOS */
+
+    .photo6 {
+        bottom: 16%;
+        left: 5%;
+    }
+
+    .photo7 {
+        bottom: 16%;
+        right: 5%;
+    }
+
+    .photo8 {
+        bottom: 6%;
+        left: 10%;
+    }
+
+    .photo11 {
+        bottom: 8%;
+        left: 40%;
+    }
+
+    .photo12 {
+        bottom: 6%;
+        right: 10%;
+    }
 }
