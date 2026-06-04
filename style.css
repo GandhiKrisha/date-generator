@@ -282,22 +282,63 @@ button:hover {
 }
 @media (max-width: 768px) {
 
+    body {
+        min-height: 100vh;
+        height: auto;
+        padding: 40px 0;
+        overflow-x: hidden;
+    }
+
     .card {
-        width: 85%;
-        padding: 25px;
+        width: 78%;
+        max-width: 340px;
+        padding: 24px 18px;
+        border-radius: 22px;
     }
 
     h1 {
         font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .subtitle {
+        font-size: 15px;
     }
 
     #result {
-        font-size: 18px;
+        font-size: 17px;
+        padding: 16px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 12px 22px;
+    }
+
+    .quote {
+        font-size: 13px;
+        line-height: 1.4;
     }
 
     .floating-photo {
-        width: 90px !important;
-        height: 90px !important;
+        width: 95px !important;
+        height: 95px !important;
     }
 
+    .photo9,
+    .photo10,
+    .photo11,
+    .photo12 {
+        display: none;
+    }
+
+    .photo1 { top: 3%; left: 4%; }
+    .photo2 { top: 4%; left: 38%; }
+    .photo3 { top: 6%; right: 4%; }
+
+    .photo4 { top: 72%; left: 4%; }
+    .photo5 { top: 74%; right: 5%; }
+    .photo6 { bottom: 4%; left: 10%; }
+    .photo7 { bottom: 4%; right: 10%; }
+    .photo8 { display: none; }
 }
