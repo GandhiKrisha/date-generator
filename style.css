@@ -1,0 +1,303 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* FLOATING HEARTS */
+
+.hearts span {
+    position: absolute;
+    bottom: -50px;
+    font-size: 28px;
+    opacity: 0.45;
+    animation: heartsFloat 9s linear infinite;
+    z-index: 1;
+}
+
+.hearts span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.hearts span:nth-child(2) {
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.hearts span:nth-child(3) {
+    left: 50%;
+    animation-delay: 4s;
+}
+
+.hearts span:nth-child(4) {
+    left: 70%;
+    animation-delay: 1s;
+}
+
+.hearts span:nth-child(5) {
+    left: 90%;
+    animation-delay: 3s;
+}
+
+@keyframes heartsFloat {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.45;
+    }
+
+    100% {
+        transform: translateY(-110vh) scale(1.4);
+        opacity: 0;
+    }
+}
+
+/* POLAROID PHOTOS */
+
+.floating-photo {
+    position: absolute;
+    z-index: 0;
+    animation: float 8s ease-in-out infinite;
+}
+.polaroid {
+    background: white;
+    padding: 8px 8px 22px 8px;
+    border-radius: 6px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    opacity: 0.85;
+}
+
+.polaroid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* CLEANER PHOTO POSITIONS */
+
+.photo1 {
+    width: 150px;
+    height: 150px;
+    top: 5%;
+    left: 5%;
+}
+
+.photo2 {
+    width: 120px;
+    height: 120px;
+    top: 5%;
+    left: 42%;
+    animation-delay: 1s;
+}
+
+.photo3 {
+    width: 135px;
+    height: 135px;
+    top: 8%;
+    right: 7%;
+    animation-delay: 2s;
+}
+
+.photo4 {
+    width: 130px;
+    height: 130px;
+    top: 35%;
+    left: 4%;
+    animation-delay: 3s;
+}
+
+.photo5 {
+    width: 115px;
+    height: 115px;
+    top: 38%;
+    right: 6%;
+    animation-delay: 4s;
+}
+
+.photo6 {
+    width: 145px;
+    height: 145px;
+    bottom: 6%;
+    left: 8%;
+    animation-delay: 5s;
+}
+
+.photo7 {
+    width: 130px;
+    height: 130px;
+    bottom: 7%;
+    right: 9%;
+    animation-delay: 6s;
+}
+
+.photo8 {
+    width: 115px;
+    height: 115px;
+    bottom: 4%;
+    left: 43%;
+    animation-delay: 7s;
+}
+
+/* EXTRA REPEATED PHOTOS */
+
+.photo9 {
+    width: 105px;
+    height: 105px;
+    top: 24%;
+    left: 22%;
+    animation-delay: 1.5s;
+}
+
+.photo10 {
+    width: 105px;
+    height: 105px;
+    top: 24%;
+    right: 22%;
+    animation-delay: 2.5s;
+}
+
+.photo11 {
+    width: 100px;
+    height: 100px;
+    bottom: 25%;
+    left: 22%;
+    animation-delay: 3.5s;
+}
+
+.photo12 {
+    width: 100px;
+    height: 100px;
+    bottom: 25%;
+    right: 22%;
+    animation-delay: 4.5s;
+}
+
+/* CARD */
+
+.card {
+    position: relative;
+    z-index: 10;
+    width: 400px;
+    padding: 35px;
+    border-radius: 25px;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    color: #ff4f9a;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+#result {
+    background-color: #fff0f6;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    min-height: 35px;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+button {
+    background-color: #ff4f9a;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e63f87;
+    transform: scale(1.05);
+}
+
+.quote {
+    margin-top: 25px;
+    color: #ff4f9a;
+    font-style: italic;
+    font-size: 15px;
+}
+
+/* FLOATING PHOTO ANIMATION */
+
+@keyframes float {
+    0% {
+        translate: 0 0;
+    }
+
+    50% {
+        translate: 0 -20px;
+    }
+
+    100% {
+        translate: 0 0;
+    }
+}
+
+/* CONFETTI */
+
+.confetti {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    animation: confettiBurst 1s ease-out forwards;
+    z-index: 20;
+    pointer-events: none;
+}
+
+@keyframes confettiBurst {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(var(--x), var(--y)) scale(1.5) rotate(360deg);
+        opacity: 0;
+    }
+}
+@media (max-width: 768px) {
+
+    .card {
+        width: 85%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+
+    .floating-photo {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+}
