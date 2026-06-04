@@ -284,7 +284,6 @@ button:hover {
 
     body {
         height: 100vh;
-
         overflow: hidden;
 
         display: flex;
@@ -298,23 +297,26 @@ button:hover {
     .card {
         width: 72%;
         max-width: 285px;
-
         padding: 20px 16px;
-
         margin: 0;
+        border-radius: 22px;
+        z-index: 10;
     }
 
     h1 {
         font-size: 1.65rem;
+        line-height: 1.2;
     }
 
     .subtitle {
         font-size: 13px;
+        margin-bottom: 18px;
     }
 
     #result {
         font-size: 15px;
         padding: 13px;
+        margin-bottom: 20px;
     }
 
     button {
@@ -324,6 +326,8 @@ button:hover {
 
     .quote {
         font-size: 11px;
+        line-height: 1.4;
+        margin-top: 18px;
     }
 
     .floating-photo {
@@ -332,27 +336,20 @@ button:hover {
         opacity: 0.85;
     }
 
-    /* Top section */
+    .photo1 { top: 5%; left: 4%; }
+    .photo2 { top: 6%; left: 38%; }
+    .photo3 { top: 5%; right: 4%; }
 
-    .photo1 { top: 2%; left: 5%; }
-    .photo2 { top: 5%; left: 38%; }
-    .photo3 { top: 3%; right: 5%; }
+    .photo9 { top: 20%; left: 15%; }
+    .photo10 { top: 20%; right: 15%; }
 
-    .photo9 { top: 12%; left: 18%; }
-    .photo10 { top: 12%; right: 18%; }
+    .photo4 { top: 36%; left: -1%; }
+    .photo5 { top: 36%; right: -1%; }
 
-    /* Middle section */
+    .photo11 { bottom: 22%; left: 18%; }
+    .photo12 { bottom: 22%; right: 18%; }
 
-    .photo4 { top: 38%; left: 2%; }
-    .photo5 { top: 38%; right: 2%; }
-
-    /* Bottom section */
-
-    .photo6 { bottom: 18%; left: 5%; }
-    .photo7 { bottom: 18%; right: 5%; }
-
-    .photo8 { bottom: 6%; left: 10%; }
-
-    .photo11 { bottom: 8%; left: 40%; }
-    .photo12 { bottom: 6%; right: 10%; }
+    .photo6 { bottom: 5%; left: 4%; }
+    .photo7 { bottom: 5%; right: 4%; }
+    .photo8 { bottom: 10%; left: 38%; }
 }
