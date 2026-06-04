@@ -285,32 +285,37 @@ button:hover {
     body {
         min-height: 100vh;
         height: auto;
+
         overflow-x: hidden;
-        padding: 25px 0;
+        overflow-y: auto;
+
+        justify-content: flex-start;
+
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .card {
         width: 72%;
         max-width: 285px;
+
         padding: 20px 16px;
-        border-radius: 22px;
-        z-index: 10;
+
+        margin-top: 180px;
+        margin-bottom: 180px;
     }
 
     h1 {
         font-size: 1.65rem;
-        line-height: 1.2;
     }
 
     .subtitle {
         font-size: 13px;
-        margin-bottom: 18px;
     }
 
     #result {
         font-size: 15px;
         padding: 13px;
-        margin-bottom: 20px;
     }
 
     button {
@@ -320,32 +325,35 @@ button:hover {
 
     .quote {
         font-size: 11px;
-        line-height: 1.4;
-        margin-top: 18px;
     }
 
     .floating-photo {
         width: 72px !important;
         height: 72px !important;
         opacity: 0.85;
-        z-index: 1;
     }
 
-    .photo1 { top: 3%; left: 5%; }
-    .photo2 { top: 2%; left: 38%; }
-    .photo3 { top: 4%; right: 5%; }
+    /* Top section */
 
-    .photo4 { top: 24%; left: 2%; }
-    .photo5 { top: 22%; right: 2%; }
+    .photo1 { top: 2%; left: 5%; }
+    .photo2 { top: 5%; left: 38%; }
+    .photo3 { top: 3%; right: 5%; }
 
-    .photo6 { top: 48%; left: -1%; }
-    .photo7 { top: 48%; right: -1%; }
+    .photo9 { top: 12%; left: 18%; }
+    .photo10 { top: 12%; right: 18%; }
 
-    .photo8 { bottom: 5%; left: 8%; }
+    /* Middle section */
 
-    .photo9 { top: 15%; left: 20%; }
-    .photo10 { top: 15%; right: 20%; }
+    .photo4 { top: 38%; left: 2%; }
+    .photo5 { top: 38%; right: 2%; }
 
-    .photo11 { bottom: 12%; left: 38%; }
-    .photo12 { bottom: 5%; right: 8%; }
+    /* Bottom section */
+
+    .photo6 { bottom: 18%; left: 5%; }
+    .photo7 { bottom: 18%; right: 5%; }
+
+    .photo8 { bottom: 6%; left: 10%; }
+
+    .photo11 { bottom: 8%; left: 40%; }
+    .photo12 { bottom: 6%; right: 10%; }
 }
