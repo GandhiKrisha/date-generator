@@ -283,16 +283,16 @@ button:hover {
 @media (max-width: 768px) {
 
     body {
-        min-height: 100vh;
-        height: auto;
+        height: 100vh;
 
-        overflow-x: hidden;
-        overflow-y: auto;
+        overflow: hidden;
 
-        justify-content: flex-start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding: 0;
+        margin: 0;
     }
 
     .card {
@@ -301,8 +301,7 @@ button:hover {
 
         padding: 20px 16px;
 
-        margin-top: 180px;
-        margin-bottom: 180px;
+        margin: 0;
     }
 
     h1 {
